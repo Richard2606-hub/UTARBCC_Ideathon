@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCACC Ideathon - Shape the Future</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-effects">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="grid-overlay"></div>
+        <div class="blockchain-deco deco-1"><span class="material-symbols-outlined">hub</span></div>
+        <div class="blockchain-deco deco-2"><span class="material-symbols-outlined">link</span></div>
+        <div class="blockchain-deco deco-3"><span class="material-symbols-outlined">lan</span></div>
+        <div class="blockchain-deco deco-4"><span class="material-symbols-outlined">token</span></div>
+        <div class="blockchain-deco deco-5"><span class="material-symbols-outlined">currency_bitcoin</span></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">CCACC <span class="highlight">Ideathon</span></a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#tracks" class="nav-link">Tracks</a>
+                <a href="#timeline" class="nav-link">Timeline</a>
+                <a href="#prizes" class="nav-link">Prizes</a>
+                <a href="#judges" class="nav-link">Judges</a>
+                <a href="#venue" class="nav-link">Venue</a>
+                <a href="#sponsors" class="nav-link">Sponsors</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </div>
+            <a href="#register" class="btn btn-primary nav-btn">Register Now</a>
+            <button class="mobile-toggle" id="mobile-toggle">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#home" class="mobile-link active">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#tracks" class="mobile-link">Tracks</a>
+            <a href="#timeline" class="mobile-link">Timeline</a>
+            <a href="#prizes" class="mobile-link">Prizes</a>
+            <a href="#judges" class="mobile-link">Judges</a>
+            <a href="#venue" class="mobile-link">Venue</a>
+            <a href="#sponsors" class="mobile-link">Sponsors</a>
+            <a href="#faq" class="mobile-link">FAQ</a>
+            <a href="#register" class="btn btn-primary w-full text-center mt-4">Register Now</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section-padding reveal">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge"><span class="material-symbols-outlined icon-sm">terminal</span> ONLINE BUILD & PHYSICAL PITCH</div>
+                    <h1 class="hero-title">CCACC <br><span class="text-gradient">Ideathon</span></h1>
+                    <p class="hero-desc">The premier innovation and design ideathon. Shape the future of decentralized networks.</p>
+                    
+                    <!-- Mobile Countdown Box -->
+                    <div class="countdown-card glass-panel mobile-countdown">
+                        <div class="countdown-title">Registration Closes In</div>
+                        <div class="countdown">
+                            <div class="time-box">
+                                <span id="days-mobile" class="time-val text-gradient">00</span>
+                                <span class="time-label">DAYS</span>
+                            </div>
+                            <div class="time-box">
+                                <span id="hours-mobile" class="time-val text-gradient">00</span>
+                                <span class="time-label">HOURS</span>
+                            </div>
+                            <div class="time-box">
+                                <span id="minutes-mobile" class="time-val text-gradient">00</span>
+                                <span class="time-label">MINS</span>
+                            </div>
+                            <div class="time-box">
+                                <span id="seconds-mobile" class="time-val text-gradient">00</span>
+                                <span class="time-label">SECS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a href="#register" class="btn btn-primary glow-effect">Register Now</a>
+                        <a href="#about" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="countdown-card glass-panel desktop-countdown">
+                        <div class="countdown-title">Registration Closes In</div>
+                        <div class="countdown" id="countdown">
+                            <div class="time-box">
+                                <span id="days" class="time-val text-gradient">00</span>
+                                <span class="time-label">DAYS</span>
+                            </div>
+                            <div class="time-box">
+                                <span id="hours" class="time-val text-gradient">00</span>
+                                <span class="time-label">HOURS</span>
+                            </div>
+                            <div class="time-box">
+                                <span id="minutes" class="time-val text-gradient">00</span>
+                                <span class="time-label">MINS</span>
+                            </div>
+                            <div class="time-box">
+                                <span id="seconds" class="time-val text-gradient">00</span>
+                                <span class="time-label">SECS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-padding reveal bg-darker">
+            <div class="container">
+                <h2 class="section-title text-center">ABOUT CCACC <span class="text-gradient">Ideathon</span></h2>
+                <div class="about-card glass-panel mb-8">
+                    <h3 class="about-subtitle">A hackathon to ship Malaysia's next blockchain builders.</h3>
+                    <p class="about-text">CCACC Ideathon is Malaysia's first large-scale student-led hackathon focused entirely on Web3, bringing together developers, designers, and founders across Malaysia to build, ship, and demo across 8 days online.</p>
+                    <p class="about-text">Hackers form teams, choose a sponsor track, build against real APIs and SDKs, and pitch live to track-specific judges nominated by each sponsor.</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card glass-panel glow-purple">
+                        <span class="material-symbols-outlined stat-icon text-purple">calendar_month</span>
+                        <div class="stat-val text-purple">8 Days</div>
+                        <div class="stat-label">of Hacking</div>
+                    </div>
+                    <div class="stat-card glass-panel glow-cyan">
+                        <span class="material-symbols-outlined stat-icon text-cyan">group</span>
+                        <div class="stat-val text-cyan">300+</div>
+                        <div class="stat-label">Student Builders</div>
+                    </div>
+                    <div class="stat-card glass-panel glow-green">
+                        <span class="material-symbols-outlined stat-icon text-green">school</span>
+                        <div class="stat-val text-green">20+</div>
+                        <div class="stat-label">Universities</div>
+                    </div>
+                    <div class="stat-card glass-panel glow-orange">
+                        <span class="material-symbols-outlined stat-icon text-orange">workspace_premium</span>
+                        <div class="stat-val text-orange">100%</div>
+                        <div class="stat-label">To Prize Pool</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tracks Section -->
+        <section id="tracks" class="tracks section-padding reveal">
+            <div class="container">
+                <h2 class="section-title text-center">CHALLENGE <span class="text-gradient">TRACKS</span></h2>
+                <p class="section-desc text-center mb-12">Select your domain and innovate against real-world Web3 problems.</p>
+                
+                <div class="tracks-grid">
+                    <!-- Track 1 -->
+                    <div class="track-card glass-panel border-cyan">
+                        <div class="track-header">
+                            <div class="track-icon-box bg-cyan-light"><span class="material-symbols-outlined text-cyan">payments</span></div>
+                            <span class="track-badge">TRK-01</span>
+                        </div>
+                        <h3 class="track-title">Stablecoins</h3>
+                        <p class="track-desc">Build stable and reliable cryptocurrency solutions pegged to real-world assets or algorithmic models.</p>
+                        <div class="track-details">
+                            <div class="detail-row"><span class="label">Pool:</span> <span class="value text-cyan">1,500 USDT</span></div>
+                            <div class="detail-row"><span class="label">Organiser:</span> <span class="value">MUBA</span></div>
+                            <div class="detail-row"><span class="label">Theme:</span> <span class="value">Next-Gen Stability</span></div>
+                        </div>
+                        <div class="track-prizes">
+                            <span class="prize-tag">1st: 750 USDT</span>
+                            <span class="prize-tag">2nd: 500 USDT</span>
+                            <span class="prize-tag">3rd: 250 USDT</span>
+                        </div>
+                        <div class="track-reqs">
+                            <p class="req-title">Project Types:</p>
+                            <ul>
+                                <li>Fiat-backed tokens</li>
+                                <li>Algorithmic stablecoins</li>
+                                <li>Cross-chain mechanisms</li>
+                            </ul>
+                            <p class="req-title mt-4">Requirement:</p>
+                            <p class="text-sm">Working prototype, smart contract repository, presentation.</p>
+                            <div class="mt-6 pt-4" style="border-top: 1px solid rgba(255,255,255,0.1);">
+                                <a href="track-details.html" class="text-sm text-cyan hover-underline font-mono">View full track details →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Track 2 -->
+                    <div class="track-card glass-panel border-purple">
+                        <div class="track-header">
+                            <div class="track-icon-box bg-purple-light"><span class="material-symbols-outlined text-purple">currency_exchange</span></div>
+                            <span class="track-badge">TRK-02</span>
+                        </div>
+                        <h3 class="track-title">DeFi</h3>
+                        <p class="track-desc">Design decentralised financial instruments, AMMs, lending protocols, and more.</p>
+                        <div class="track-details">
+                            <div class="detail-row"><span class="label">Pool:</span> <span class="value text-purple">1,500 USDT</span></div>
+                            <div class="detail-row"><span class="label">Organiser:</span> <span class="value">MUBA</span></div>
+                            <div class="detail-row"><span class="label">Theme:</span> <span class="value">Decentralised Finance</span></div>
+                        </div>
+                        <div class="track-prizes">
+                            <span class="prize-tag">1st: 750 USDT</span>
+                            <span class="prize-tag">2nd: 500 USDT</span>
+                            <span class="prize-tag">3rd: 250 USDT</span>
+                        </div>
+                        <div class="track-reqs">
+                            <p class="req-title">Project Types:</p>
+                            <ul>
+                                <li>Lending & Borrowing</li>
+                                <li>Automated Market Makers</li>
+                                <li>Yield Aggregators</li>
+                            </ul>
+                            <p class="req-title mt-4">Requirement:</p>
+                            <p class="text-sm">Working prototype, smart contract repository, presentation.</p>
+                            <div class="mt-6 pt-4" style="border-top: 1px solid rgba(255,255,255,0.1);">
+                                <a href="track-details.html" class="text-sm text-purple hover-underline font-mono">View full track details →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Track 3 -->
+                    <div class="track-card glass-panel border-orange">
+                        <div class="track-header">
+                            <div class="track-icon-box bg-orange-light"><span class="material-symbols-outlined text-orange">psychology</span></div>
+                            <span class="track-badge">TRK-03</span>
+                        </div>
+                        <h3 class="track-title">AI</h3>
+                        <p class="track-desc">Combine Artificial Intelligence with Blockchain to create smart, decentralized applications.</p>
+                        <div class="track-details">
+                            <div class="detail-row"><span class="label">Pool:</span> <span class="value text-orange">1,500 USDT</span></div>
+                            <div class="detail-row"><span class="label">Organiser:</span> <span class="value">MUBA</span></div>
+                            <div class="detail-row"><span class="label">Theme:</span> <span class="value">Intelligent Web3</span></div>
+                        </div>
+                        <div class="track-prizes">
+                            <span class="prize-tag">1st: 750 USDT</span>
+                            <span class="prize-tag">2nd: 500 USDT</span>
+                            <span class="prize-tag">3rd: 250 USDT</span>
+                        </div>
+                        <div class="track-reqs">
+                            <p class="req-title">Project Types:</p>
+                            <ul>
+                                <li>AI Trading Bots</li>
+                                <li>Predictive Models</li>
+                                <li>Generative AI NFTs</li>
+                            </ul>
+                            <p class="req-title mt-4">Requirement:</p>
+                            <p class="text-sm">Working prototype, smart contract repository, presentation.</p>
+                            <div class="mt-6 pt-4" style="border-top: 1px solid rgba(255,255,255,0.1);">
+                                <a href="track-details.html" class="text-sm text-orange hover-underline font-mono">View full track details →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Track 4 -->
+                    <div class="track-card glass-panel border-green">
+                        <div class="track-header">
+                            <div class="track-icon-box bg-green-light"><span class="material-symbols-outlined text-green">dns</span></div>
+                            <span class="track-badge">TRK-04</span>
+                        </div>
+                        <h3 class="track-title">Infrastructure</h3>
+                        <p class="track-desc">Build tools, protocols, and foundational layers to scale the Web3 ecosystem.</p>
+                        <div class="track-details">
+                            <div class="detail-row"><span class="label">Pool:</span> <span class="value text-green">1,500 USDT</span></div>
+                            <div class="detail-row"><span class="label">Organiser:</span> <span class="value">MUBA</span></div>
+                            <div class="detail-row"><span class="label">Theme:</span> <span class="value">Web3 Foundations</span></div>
+                        </div>
+                        <div class="track-prizes">
+                            <span class="prize-tag">1st: 750 USDT</span>
+                            <span class="prize-tag">2nd: 500 USDT</span>
+                            <span class="prize-tag">3rd: 250 USDT</span>
+                        </div>
+                        <div class="track-reqs">
+                            <p class="req-title">Project Types:</p>
+                            <ul>
+                                <li>Layer 2 Solutions</li>
+                                <li>Developer Tooling</li>
+                                <li>Data Availability</li>
+                            </ul>
+                            <p class="req-title mt-4">Requirement:</p>
+                            <p class="text-sm">Working prototype, smart contract repository, presentation.</p>
+                            <div class="mt-6 pt-4" style="border-top: 1px solid rgba(255,255,255,0.1);">
+                                <a href="track-details.html" class="text-sm text-green hover-underline font-mono">View full track details →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Track 5 -->
+                    <div class="track-card glass-panel border-cyan">
+                        <div class="track-header">
+                            <div class="track-icon-box bg-cyan-light"><span class="material-symbols-outlined text-cyan">smartphone</span></div>
+                            <span class="track-badge">TRK-05</span>
+                        </div>
+                        <h3 class="track-title">Consumer Apps</h3>
+                        <p class="track-desc">Create engaging decentralized applications tailored for everyday users.</p>
+                        <div class="track-details">
+                            <div class="detail-row"><span class="label">Pool:</span> <span class="value text-cyan">1,500 USDT</span></div>
+                            <div class="detail-row"><span class="label">Organiser:</span> <span class="value">MUBA</span></div>
+                            <div class="detail-row"><span class="label">Theme:</span> <span class="value">Mass Adoption</span></div>
+                        </div>
+                        <div class="track-prizes">
+                            <span class="prize-tag">1st: 750 USDT</span>
+                            <span class="prize-tag">2nd: 500 USDT</span>
+                            <span class="prize-tag">3rd: 250 USDT</span>
+                        </div>
+                        <div class="track-reqs">
+                            <p class="req-title">Project Types:</p>
+                            <ul>
+                                <li>SocialFi & Gaming</li>
+                                <li>NFT Marketplaces</li>
+                                <li>Digital Identity</li>
+                            </ul>
+                            <p class="req-title mt-4">Requirement:</p>
+                            <p class="text-sm">Working prototype, smart contract repository, presentation.</p>
+                            <div class="mt-6 pt-4" style="border-top: 1px solid rgba(255,255,255,0.1);">
+                                <a href="track-details.html" class="text-sm text-cyan hover-underline font-mono">View full track details →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Judging Criteria -->
+                <div class="judging-criteria glass-panel mt-12">
+                    <div class="badge mb-4">EVALUATION</div>
+                    <h3 class="font-heading text-3xl mb-8">Judging Criteria</h3>
+                    <div class="criteria-grid">
+                        <div class="criteria-card border-cyan">
+                            <div class="criteria-header">
+                                <h4 class="text-cyan">1. Technical Implementation</h4>
+                                <span class="criteria-weight">30%</span>
+                            </div>
+                            <ul>
+                                <li>How well is the project built from a technical standpoint?</li>
+                                <li>Does it function as intended with minimal bugs?</li>
+                                <li>Is it scalable and efficient?</li>
+                                <li>Does it leverage innovative or well-structured solutions?</li>
+                            </ul>
+                            <div class="note bg-red-dark mt-4">
+                                <strong>NOTE:</strong> Number of partner integrations will not be taken into account. Judges will review GitHub; suspicious commits may result in disqualification.
+                            </div>
+                        </div>
+                        <div class="criteria-card border-purple">
+                            <div class="criteria-header">
+                                <h4 class="text-purple">2. Practicality & Impact</h4>
+                                <span class="criteria-weight">30%</span>
+                            </div>
+                            <ul>
+                                <li>Is this something users would realistically adopt?</li>
+                                <li>Does it bring a meaningful improvement over existing solutions?</li>
+                                <li>How well does it address the problem statement?</li>
+                            </ul>
+                        </div>
+                        <div class="criteria-card border-orange">
+                            <div class="criteria-header">
+                                <h4 class="text-orange">3. Presentation & Clarity</h4>
+                                <span class="criteria-weight">20%</span>
+                            </div>
+                            <ul>
+                                <li>How well did the team communicate their idea and implementation?</li>
+                                <li>Is the demo polished and effective in showcasing the project?</li>
+                            </ul>
+                        </div>
+                        <div class="criteria-card border-green">
+                            <div class="criteria-header">
+                                <h4 class="text-green">4. UX & Design</h4>
+                                <span class="criteria-weight">10%</span>
+                            </div>
+                            <ul>
+                                <li>Is the interface intuitive and easy to navigate?</li>
+                                <li>Does the project solve a real user pain point effectively?</li>
+                                <li>Is the design aesthetically pleasing and accessible?</li>
+                                <li>How seamless is the onboarding process?</li>
+                            </ul>
+                            <div class="note mt-4">Basic functions like wallet connecting, compatibility will be taken into account.</div>
+                        </div>
+                        <div class="criteria-card border-cyan-light lg-col-span-2">
+                            <div class="criteria-header">
+                                <h4 class="text-cyan-light">5. Originality</h4>
+                                <span class="criteria-weight">10%</span>
+                            </div>
+                            <ul>
+                                <li>Is this a project that has never been seen before?</li>
+                                <li>Does it solve current existing problems or is it more of an additional feature towards existing solutions?</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline" class="timeline section-padding reveal bg-darker">
+            <div class="container max-w-4xl">
+                <h2 class="section-title text-center">EVENT <span class="text-gradient">SEQUENCE</span></h2>
+                <div class="timeline-container mt-12">
+                    <div class="timeline-line"></div>
+                    
+                    <div class="timeline-item" data-date="2026-06-12">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content glass-panel">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">Hackathon Reveal</h3>
+                                <span class="timeline-date text-cyan"><span class="material-symbols-outlined icon-sm">campaign</span> 12TH JUNE</span>
+                            </div>
+                            <p class="text-sm text-gray">The initial announcement and reveal of the hackathon.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-date="2026-06-26">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content glass-panel">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">Registration Starts</h3>
+                                <span class="timeline-date text-purple"><span class="material-symbols-outlined icon-sm">app_registration</span> 26TH JUNE</span>
+                            </div>
+                            <p class="text-sm text-gray">Registration officially opens. Teams of 2 to 4 members can begin registering via the Devfolio platform.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-date="2026-07-31">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content glass-panel">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">Workshop 1</h3>
+                                <span class="timeline-date text-purple"><span class="material-symbols-outlined icon-sm">school</span> 31ST JUL</span>
+                            </div>
+                            <p class="text-sm text-gray">Online preparation session for Workshop 1.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-date="2026-08-07">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content glass-panel">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">Workshop 2</h3>
+                                <span class="timeline-date text-purple"><span class="material-symbols-outlined icon-sm">school</span> 7TH AUG</span>
+                            </div>
+                            <p class="text-sm text-gray">Online preparation session for Workshop 2.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-date="2026-08-15">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content glass-panel">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">Pitching 101</h3>
+                                <span class="timeline-date text-purple"><span class="material-symbols-outlined icon-sm">school</span> 15TH AUG</span>
+                            </div>
+                            <p class="text-sm text-gray">Online preparation session for Pitching 101.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-date="2026-08-26">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content glass-panel">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">Opening Ceremony & Track Reveal</h3>
+                                <span class="timeline-date text-purple"><span class="material-symbols-outlined icon-sm">celebration</span> 26TH AUG</span>
+                            </div>
+                            <p class="text-sm text-gray">The online opening ceremony where specific tracks are revealed. Hacking begins! Mentorship is available.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-date="2026-09-04">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content glass-panel">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">Registration Closes</h3>
+                                <span class="timeline-date text-orange"><span class="material-symbols-outlined icon-sm">event_busy</span> 4TH SEPT</span>
+                            </div>
+                            <p class="text-sm text-gray">The final deadline to register a team.</p>
+                            <div class="sub-timeline mt-4">
+                                <div class="sub-time">11:59 PM</div>
+                                <div class="sub-event text-orange font-bold">Registration Closes</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-date="2026-09-12">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content glass-panel">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">Submission Deadline</h3>
+                                <span class="timeline-date text-purple"><span class="material-symbols-outlined icon-sm">lock_clock</span> 12TH SEPT</span>
+                            </div>
+                            <p class="text-sm text-gray">The deadline for all deliverables (pitch deck, GitHub, MVP video).</p>
+                            <div class="sub-timeline mt-4">
+                                <div class="sub-time">08:00 AM</div>
+                                <div class="sub-event text-purple font-bold">Submission Deadline</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-date="2026-09-12">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content glass-panel">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">Demo Day & Grand Finale</h3>
+                                <span class="timeline-date text-cyan"><span class="material-symbols-outlined icon-sm">trophy</span> 12TH SEPT</span>
+                            </div>
+                            <div class="sub-timeline-list mt-4">
+                                <div class="sub-item">
+                                    <div class="sub-time">09:00 AM</div>
+                                    <div class="sub-event">Team Registration & Breakfast</div>
+                                </div>
+                                <div class="sub-item">
+                                    <div class="sub-time">10:00 AM - 01:00 PM</div>
+                                    <div class="sub-event">Last Polishing Session</div>
+                                </div>
+                                <div class="sub-item bg-highlight">
+                                    <div class="sub-time">01:00 PM</div>
+                                    <div class="sub-event text-cyan font-bold">Submission for Pitching</div>
+                                </div>
+                                <div class="sub-item">
+                                    <div class="sub-time">01:00 PM - 02:00 PM</div>
+                                    <div class="sub-event">Lunch Time</div>
+                                </div>
+                                <div class="sub-item">
+                                    <div class="sub-time">02:00 PM - 04:00 PM</div>
+                                    <div class="sub-event">First, Second & Third Track Pitching</div>
+                                </div>
+                                <div class="sub-item">
+                                    <div class="sub-time">04:00 PM - 05:00 PM</div>
+                                    <div class="sub-event">Winner Finalize and Lunch</div>
+                                </div>
+                                <div class="sub-item bg-highlight">
+                                    <div class="sub-time">05:00 PM</div>
+                                    <div class="sub-event text-cyan font-bold">Prize-Giving & Closing Ceremony</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prizes Section -->
+        <section id="prizes" class="prizes section-padding reveal">
+            <div class="container text-center">
+                <h2 class="section-title">PRIZE <span class="text-gradient">POOL</span></h2>
+                <div class="prize-total text-gradient pulse-text my-4">RM 52,000</div>
+                <p class="section-desc max-w-2xl mx-auto mb-16">Compete for glory, massive cash rewards, and the chance to secure funding for your cyber-innovations.</p>
+
+                <div class="podium-container">
+                    <div class="podium-card glass-panel runner-up order-2 md-order-1">
+                        <div class="icon-circle border-cyan"><span class="material-symbols-outlined text-cyan text-4xl">emoji_events</span></div>
+                        <h3>1st Runner Up</h3>
+                        <div class="prize-amount text-cyan">RM 15,000</div>
+                    </div>
+                    <div class="podium-card glass-panel champion order-1 md-order-2">
+                        <div class="icon-circle border-orange champion-icon glow-orange-lg"><span class="material-symbols-outlined text-orange text-6xl">trophy</span></div>
+                        <h2 class="champion-title text-gradient-orange">CHAMPION</h2>
+                        <div class="prize-amount text-orange pulse-text">RM 25,000</div>
+                    </div>
+                    <div class="podium-card glass-panel second-runner order-3 md-order-3">
+                        <div class="icon-circle border-purple"><span class="material-symbols-outlined text-purple text-4xl">military_tech</span></div>
+                        <h3>2nd Runner Up</h3>
+                        <div class="prize-amount text-purple">RM 8,000</div>
+                    </div>
+                </div>
+
+                <div class="special-awards mt-20">
+                    <h3 class="text-3xl font-heading mb-8">Special Awards</h3>
+                    <div class="grid-3">
+                        <div class="award-card glass-panel hover-lift border-cyan-top">
+                            <div class="flex items-center justify-center gap-2 mb-2">
+                                <span class="material-symbols-outlined text-cyan">campaign</span>
+                                <h4 class="font-bold uppercase tracking-wider">Best Pitch</h4>
+                            </div>
+                            <div class="text-2xl font-bold text-cyan mb-2">RM 1,000</div>
+                            <p class="text-sm text-gray">Awarded for the most compelling and persuasive presentation delivery.</p>
+                        </div>
+                        <div class="award-card glass-panel hover-lift border-purple-top">
+                            <div class="flex items-center justify-center gap-2 mb-2">
+                                <span class="material-symbols-outlined text-purple">lightbulb</span>
+                                <h4 class="font-bold uppercase tracking-wider">Most Innovative</h4>
+                            </div>
+                            <div class="text-2xl font-bold text-purple mb-2">RM 2,000</div>
+                            <p class="text-sm text-gray">Recognizing the most unique and boundary-pushing technical solution.</p>
+                        </div>
+                        <div class="award-card glass-panel hover-lift border-orange-top">
+                            <div class="flex items-center justify-center gap-2 mb-2">
+                                <span class="material-symbols-outlined text-orange">dashboard</span>
+                                <h4 class="font-bold uppercase tracking-wider">Best Design</h4>
+                            </div>
+                            <div class="text-2xl font-bold text-orange mb-2">RM 1,000</div>
+                            <p class="text-sm text-gray">For the most outstanding user interface and user experience design.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Judges & Mentors -->
+        <section id="judges" class="judges section-padding reveal bg-darker">
+            <div class="container">
+                <h2 class="section-title text-center">JUDGES & <span class="text-gradient">MENTORS</span></h2>
+                <p class="section-desc text-center mb-12">Meet the industry experts and veterans who will be guiding and evaluating your builds.</p>
+                
+                <div class="judges-list">
+                    <!-- Mentor 1 -->
+                    <div class="judge-card glass-panel hover-lift flex-col-md">
+                        <div class="judge-photo">
+                            <img src="https://placehold.co/600x800/1a1a24/FFFFFF?text=ALEX" alt="Alex Mercer">
+                        </div>
+                        <div class="judge-info">
+                            <div class="judge-role text-cyan"><span class="material-symbols-outlined icon-sm">gavel</span> Lead Judge</div>
+                            <h3 class="judge-name">Alex Mercer</h3>
+                            <p class="judge-title text-purple">Blockchain Architect @ Nexus</p>
+                            <p class="judge-bio text-gray text-sm mt-4">With over a decade of experience in distributed systems, Alex specializes in highly scalable Layer 2 architectures. They have previously led engineering teams at multiple successful Web3 startups and are passionate about mentoring the next generation of builders.</p>
+                        </div>
+                    </div>
+                    <!-- Mentor 2 -->
+                    <div class="judge-card glass-panel hover-lift flex-col-md">
+                        <div class="judge-photo">
+                            <img src="https://placehold.co/600x800/1a1a24/FFFFFF?text=JORDAN" alt="Jordan Lee">
+                        </div>
+                        <div class="judge-info">
+                            <div class="judge-role text-cyan"><span class="material-symbols-outlined icon-sm">gavel</span> Lead Judge</div>
+                            <h3 class="judge-name">Jordan Lee</h3>
+                            <p class="judge-title text-purple">DeFi Lead @ BlockVision</p>
+                            <p class="judge-bio text-gray text-sm mt-4">Pioneering decentralised finance models since 2018, Jordan is a key figure in automated market maker development. Dedicated to security and scalability in Web3 ecosystems.</p>
+                        </div>
+                    </div>
+                    <!-- Mentor 3 -->
+                    <div class="judge-card glass-panel hover-lift flex-col-md">
+                        <div class="judge-photo">
+                            <img src="https://placehold.co/600x800/1a1a24/FFFFFF?text=TAYLOR" alt="Taylor Swift">
+                        </div>
+                        <div class="judge-info">
+                            <div class="judge-role text-cyan"><span class="material-symbols-outlined icon-sm">gavel</span> Lead Judge</div>
+                            <h3 class="judge-name">Taylor Kim</h3>
+                            <p class="judge-title text-purple">Head of AI @ SynthetixLab</p>
+                            <p class="judge-bio text-gray text-sm mt-4">Bridging the gap between on-chain data and generative AI. Taylor is an expert in zero-knowledge proofs and data privacy on public ledgers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Venue / Getting Here -->
+        <section id="venue" class="venue section-padding reveal">
+            <div class="container max-w-5xl text-center">
+                <h2 class="section-title">GETTING <span class="text-gradient">THERE</span></h2>
+                <p class="section-desc mb-10 text-sm">It is mandatory for all team members to attend the physical phase of Demo Day and Grand Finale for CCACC Ideathon on 12 Sept.</p>
+                
+                <div class="map-container glass-panel p-2 glow-cyan-border">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.4!2d101.8763136!3d2.9436195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdce0fe6da15fb%3A0x78fc9bbd6d340!2sUNM%20Cafeteria!5e1!3m2!1sen!2smy!4v1700000000000" class="map-iframe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="University of Nottingham Malaysia"></iframe>
+                </div>
+                
+                <a href="https://www.nottingham.edu.my/AboutUs/documents/Campus-Map-2018updated.pdf" target="_blank" rel="noreferrer" class="btn-link mt-6 inline-flex items-center gap-2 text-cyan hover:text-white transition-colors">
+                    <span class="material-symbols-outlined">map</span> View full campus map (PDF)
+                </a>
+            </div>
+        </section>
+
+        <!-- Sponsors -->
+        <section id="sponsors" class="sponsors section-padding reveal bg-darker">
+            <div class="container text-center max-w-6xl">
+                <h2 class="section-title">SPONSORS & <span class="text-gradient">PARTNERS</span></h2>
+                <p class="section-desc mb-12">Meet the visionaries empowering the next generation of builders in Malaysia.</p>
+                
+                <div class="sponsor-tier mb-16">
+                    <h3 class="tier-title text-purple drop-shadow-purple">FOUNDING SPONSORS</h3>
+                    <div class="flex justify-center mt-6">
+                        <div class="sponsor-card glass-panel border-purple hover-glow-purple sponsor-lg">
+                            <span class="sponsor-logo-text">LOGO HERE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sponsor-tier mb-16">
+                    <h3 class="tier-title text-cyan drop-shadow-cyan">GOLD SPONSORS</h3>
+                    <div class="flex justify-center gap-8 flex-wrap mt-6">
+                        <div class="sponsor-card glass-panel border-cyan hover-glow-cyan sponsor-md">
+                            <span class="sponsor-logo-text">LOGO HERE</span>
+                        </div>
+                        <div class="sponsor-card glass-panel border-cyan hover-glow-cyan sponsor-md">
+                            <span class="sponsor-logo-text">LOGO HERE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sponsor-tier mb-16">
+                    <h3 class="tier-title text-green drop-shadow-green">SILVER SPONSORS</h3>
+                    <div class="flex justify-center gap-6 flex-wrap mt-6">
+                        <div class="sponsor-card glass-panel border-green hover-glow-green sponsor-sm">
+                            <span class="sponsor-logo-text">LOGO HERE</span>
+                        </div>
+                        <div class="sponsor-card glass-panel border-green hover-glow-green sponsor-sm">
+                            <span class="sponsor-logo-text">LOGO HERE</span>
+                        </div>
+                        <div class="sponsor-card glass-panel border-green hover-glow-green sponsor-sm">
+                            <span class="sponsor-logo-text">LOGO HERE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sponsor-tier">
+                    <h3 class="tier-title text-orange drop-shadow-orange">BRONZE SPONSORS</h3>
+                    <div class="flex justify-center gap-4 flex-wrap mt-6">
+                        <div class="sponsor-card glass-panel border-orange hover-glow-orange sponsor-xs">
+                            <span class="sponsor-logo-text">LOGO HERE</span>
+                        </div>
+                        <div class="sponsor-card glass-panel border-orange hover-glow-orange sponsor-xs">
+                            <span class="sponsor-logo-text">LOGO HERE</span>
+                        </div>
+                        <div class="sponsor-card glass-panel border-orange hover-glow-orange sponsor-xs">
+                            <span class="sponsor-logo-text">LOGO HERE</span>
+                        </div>
+                        <div class="sponsor-card glass-panel border-orange hover-glow-orange sponsor-xs">
+                            <span class="sponsor-logo-text">LOGO HERE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-box glass-panel glow-purple-border mt-20 max-w-2xl mx-auto p-12 hover-lift">
+                    <h2 class="text-3xl font-heading mb-4">Become a <span class="text-gradient">Sponsor</span></h2>
+                    <p class="text-gray mb-8">Interested in partnering with us for CCACC Ideathon? We're looking for passionate sponsors who share our vision for the future of blockchain.</p>
+                    <a href="mailto:malaysiauniversityblockchainas@gmail.com" class="btn btn-primary glow-effect">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq section-padding reveal">
+            <div class="container max-w-4xl">
+                <h2 class="section-title text-center">FREQUENTLY ASKED <span class="text-gradient">QUESTIONS</span></h2>
+                
+                <div class="accordion mt-12">
+                    <div class="accordion-item glass-panel">
+                        <button class="accordion-header">
+                            <div class="flex items-center gap-4"><span class="text-cyan font-mono text-sm opacity-70">01</span> <span class="font-bold">What is the format of CCACC Ideathon?</span></div>
+                            <span class="material-symbols-outlined icon">add</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>The event follows a hybrid 18-day format. It consists of an online build phase and a physical pitch day.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item glass-panel">
+                        <button class="accordion-header">
+                            <div class="flex items-center gap-4"><span class="text-cyan font-mono text-sm opacity-70">02</span> <span class="font-bold">Will mentorship be provided?</span></div>
+                            <span class="material-symbols-outlined icon">add</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Mentorship can be available throughout the online hack period with specific timeslots for teams to choose from.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item glass-panel">
+                        <button class="accordion-header">
+                            <div class="flex items-center gap-4"><span class="text-cyan font-mono text-sm opacity-70">03</span> <span class="font-bold">Who can participate?</span></div>
+                            <span class="material-symbols-outlined icon">add</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>All Malaysians and visa holders currently residing in Malaysia are eligible to join.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item glass-panel">
+                        <button class="accordion-header">
+                            <div class="flex items-center gap-4"><span class="text-cyan font-mono text-sm opacity-70">04</span> <span class="font-bold">Can I join without a team?</span></div>
+                            <span class="material-symbols-outlined icon">add</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>No, you'll need to be in a team to participate. Don't worry if you don't have one yet—we can help match you with others!</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item glass-panel">
+                        <button class="accordion-header">
+                            <div class="flex items-center gap-4"><span class="text-cyan font-mono text-sm opacity-70">05</span> <span class="font-bold">Are there any verification requirements?</span></div>
+                            <span class="material-symbols-outlined icon">add</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Each participant will need to submit their LinkedIn account for verification.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item glass-panel">
+                        <button class="accordion-header">
+                            <div class="flex items-center gap-4"><span class="text-cyan font-mono text-sm opacity-70">06</span> <span class="font-bold">What is the allowed team size?</span></div>
+                            <span class="material-symbols-outlined icon">add</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>A team can consist of 2 to 4 members.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item glass-panel">
+                        <button class="accordion-header">
+                            <div class="flex items-center gap-4"><span class="text-cyan font-mono text-sm opacity-70">07</span> <span class="font-bold">Can I join multiple teams?</span></div>
+                            <span class="material-symbols-outlined icon">add</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>No participants can belong to more than one team.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item glass-panel">
+                        <button class="accordion-header">
+                            <div class="flex items-center gap-4"><span class="text-cyan font-mono text-sm opacity-70">08</span> <span class="font-bold">Can we build on a past project?</span></div>
+                            <span class="material-symbols-outlined icon">add</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>The project idea must be built from scratch. Submissions must be the team's own original work created during the online hackathon period.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item glass-panel">
+                        <button class="accordion-header">
+                            <div class="flex items-center gap-4"><span class="text-cyan font-mono text-sm opacity-70">09</span> <span class="font-bold">Can we use pre-built private frameworks?</span></div>
+                            <span class="material-symbols-outlined icon">add</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>The rule to build from scratch includes frameworks that were built privately by the team prior to the event.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item glass-panel">
+                        <button class="accordion-header">
+                            <div class="flex items-center gap-4"><span class="text-cyan font-mono text-sm opacity-70">10</span> <span class="font-bold">Who owns the rights to the project?</span></div>
+                            <span class="material-symbols-outlined icon">add</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Participants own the intellectual property (IP) of their projects.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item glass-panel">
+                        <button class="accordion-header">
+                            <div class="flex items-center gap-4"><span class="text-cyan font-mono text-sm opacity-70">11</span> <span class="font-bold">Where do we submit our projects?</span></div>
+                            <span class="material-symbols-outlined icon">add</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Devfolio is the suggested platform for hackathon registration and submission. Participants are not eligible for the Pitching Session if there are no submissions done on Devfolio.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item glass-panel">
+                        <button class="accordion-header">
+                            <div class="flex items-center gap-4"><span class="text-cyan font-mono text-sm opacity-70">12</span> <span class="font-bold">What materials do we need to submit?</span></div>
+                            <span class="material-symbols-outlined icon">add</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>You must submit a pitch deck, a link to the project's socials, a GitHub repository link, a link for the deployed app (if applicable), and a video of the overall MVP.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item glass-panel">
+                        <button class="accordion-header">
+                            <div class="flex items-center gap-4"><span class="text-cyan font-mono text-sm opacity-70">13</span> <span class="font-bold">What needs to be included in the pitch deck?</span></div>
+                            <span class="material-symbols-outlined icon">add</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>The pitch deck must cover your Problem Statement & Project Objective, Motivation and Challenges, Commercialisation and Business Model, Technology Stacks and Track Chosen, and the Overall Concept of the Project.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item glass-panel">
+                        <button class="accordion-header">
+                            <div class="flex items-center gap-4"><span class="text-cyan font-mono text-sm opacity-70">14</span> <span class="font-bold">How are projects evaluated?</span></div>
+                            <span class="material-symbols-outlined icon">add</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Projects are judged based on Technical Implementation (30%), Practicality & Impact (30%), Presentation & Clarity (20%), User Experience (UX) & Design (10%), and Originality. Judges will also look at Functionality, Potential Impact, Novelty, UX, Composability and integration, and Business Plan viability.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-box glass-panel glow-cyan-border mt-16 max-w-2xl mx-auto p-12 text-center hover-lift">
+                    <h3 class="text-2xl font-heading mb-4">Still have <span class="text-gradient">questions?</span></h3>
+                    <p class="text-gray mb-8">Can't find the answer you're looking for? Reach out to us and we'll get back to you as soon as possible.</p>
+                    <a href="mailto:malaysiauniversityblockchainas@gmail.com" class="btn btn-primary glow-effect">Email Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="copyright text-sm text-gray font-mono">
+                © CCACC Ideathon · MALAYSIA UNIVERSITY BLOCKCHAIN ASSOCIATION
+            </div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/mubahack/" target="_blank" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+                </a>
+                <a href="https://x.com/muba_hack" target="_blank" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+                <a href="https://linktr.ee/malaysiauniversityblockchainas" target="_blank" class="social-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M13.682 6.002l4.05-4.248 2.235 2.13-6.4 6.716h10.433v3.197h-10.433l6.4 6.716-2.235 2.13-4.05-4.248-2.636-2.763-2.636 2.763-4.05 4.248-2.235-2.13 6.4-6.716h-10.433v-3.197h10.433l-6.4-6.716 2.235-2.13 4.05 4.248 2.636 2.763 2.636-2.763z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
