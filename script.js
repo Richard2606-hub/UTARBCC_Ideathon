@@ -148,10 +148,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 5. Countdown Timer (Target: Sept 4 - Registration Closes)
-    // Using current year for demonstration
-    const currentYear = new Date().getFullYear();
-    const targetDate = new Date(`September 4, ${currentYear} 23:59:59`).getTime();
+    // 5. Countdown Timer (Target: June 21 - Registration Closes)
+    const targetDate = new Date(`June 21, 2026 23:59:59`).getTime();
 
     const daysEl = document.getElementById('days');
     const hoursEl = document.getElementById('hours');
