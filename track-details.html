@@ -180,121 +180,115 @@
     
     <script>
         const tracksData = {
-            'stablecoins': {
+            'near_legion': {
                 id: 'TRK-01',
-                title: 'Stablecoins',
-                theme: 'Next-Gen Stability',
+                title: 'Near Legion',
                 color: 'cyan',
                 icon: 'payments',
-                pool: '1,500 USDT',
-                organiser: 'MUBA',
-                desc: 'Build stable and reliable cryptocurrency solutions pegged to real-world assets or algorithmic models. We are looking for innovative approaches to maintain peg stability during high market volatility, capital-efficient minting/burning mechanisms, and cross-chain stablecoin solutions that reduce fragmentation.',
-                projectTypes: [
-                    'Fiat-backed tokens with proof of reserves',
-                    'Algorithmic stablecoins with novel stability mechanisms',
-                    'Cross-chain stability mechanisms and liquidity routing',
-                    'Yield-bearing stablecoins'
+                pool: 'USD 500',
+                submittedBy: 'Near Legion',
+                website: 'https://www.ironclaw.com/',
+                difficulty: 'Intermediate',
+                problemStatement: 'AI agents can now handle user data, credentials, payments, and on-chain actions, but many agent systems still lack strong privacy, permission control, and verifiable execution. This creates risks of data leaks, unauthorized actions, and low user trust.',
+                whyThisMatters: 'IronClaw by NEAR helps make autonomous AI safer by running agents in encrypted, secure environments with controlled access to sensitive data and assets. This matters because users and businesses need trusted AI agents before adopting agentic finance, commerce, and Web3 workflows at scale.',
+                schedule: [
+                    { event: 'Mentorship & Pitching Session (UTAR, Physical)', date: '26 – 27 June' },
+                    { event: 'Additional Final Stage', date: 'Not required' }
                 ],
-                requirements: 'Working prototype deployed on testnet, open-source smart contract repository, and a presentation deck detailing the economic model. Universal criteria require code to compile without errors, successful deployment to testnet, core functionality works as demonstrated, code is readable and documented, proper error handling, and the GitHub repository is organized.',
-                prizes: {
-                    first: '750 USDT',
-                    second: '500 USDT',
-                    third: '250 USDT'
-                }
+                prizes: [
+                    { label: '🥇 1st Place', value: 'USD 150' },
+                    { label: '🥈 2nd Place', value: 'USD 100' },
+                    { label: '🥉 3rd Place', value: 'USD 50' },
+                    { label: '4th – 13th Place (×10)', value: 'USD 20 each' },
+                    { label: 'Total Pool', value: 'USD 500' }
+                ],
+                support: [
+                    { resource: 'Mentors Provided', details: '2' },
+                    { resource: 'Judges Provided', details: '1' },
+                    { resource: 'Workshop Duration', details: '30 minutes' },
+                    { resource: 'Starter Kit', details: '✅ Yes' },
+                    { resource: 'Blockchain', details: 'NEAR Protocol' },
+                    { resource: 'Required Tools / APIs', details: 'IronClaw Agent' },
+                    { resource: 'Technical Resources', details: '<a href="https://docs.ironclaw.com/" class="text-cyan" target="_blank">https://docs.ironclaw.com/</a>' },
+                    { resource: 'Documentation', details: '<a href="https://docs.ironclaw.com/?_gl=1*jhhqmz*_gcl_au*MTU1NTUzMTI0MC4xNzgwMzIyNzQx" class="text-cyan" target="_blank">https://docs.ironclaw.com/?_gl=1*jhhqmz*_gcl_au*MTU1NTUzMTI0MC4xNzgwMzIyNzQx</a>' }
+                ],
+                requirements: {
+                    minimum: ['Integrate IronClaw and use it to solve a real-world problem.'],
+                    bonus: ['Successfully apply IronClaw to meaningfully improve a daily-life use case, demonstrating practical, everyday utility.'],
+                    dealBreakers: ['Using any other claw agents.']
+                },
+                judging: [
+                    { num: '1', criteria: 'Use Case', weight: '20%' },
+                    { num: '2', criteria: 'GitHub Codebase', weight: '15%' },
+                    { num: '3', criteria: 'Documentation', weight: '10%' },
+                    { num: '4', criteria: 'Presentation', weight: '5%' }
+                ],
+                opportunities: [
+                    { name: 'Internship for Winners', available: '❌ No', details: '—' },
+                    { name: 'Continued Development Support', available: '✅ Yes', details: 'Champion of the group will be able to get bounties and work with me more in the NEAR ecosystem to develop ironclaw' }
+                ]
             },
-            'defi': {
+            'sui': {
                 id: 'TRK-02',
-                title: 'DeFi',
-                theme: 'Decentralised Finance',
+                title: 'Sui: Agentic Finance & Unified Payments',
                 color: 'purple',
                 icon: 'currency_exchange',
-                pool: '1,500 USDT',
-                organiser: 'MUBA',
-                desc: 'Design decentralised financial instruments, AMMs, lending protocols, and more. This track challenges you to rethink traditional finance and build capital-efficient, composable, and secure financial legos. Focus on solving real DeFi problems like impermanent loss, liquidity fragmentation, or high collateralization ratios.',
-                projectTypes: [
-                    'Lending & Borrowing protocols with dynamic interest rates',
-                    'Automated Market Makers (AMMs) and DEX aggregators',
-                    'Yield Aggregators and auto-compounding vaults',
-                    'Derivatives and synthetic asset platforms'
+                pool: 'USD 3,500',
+                difficulty: 'Intermediate',
+                problemStatement: 'Modern financial ecosystems are highly fragmented, isolating decentralized finance (DeFi), traditional payment rails, and emerging AI-driven (agentic) workflows. This disconnect causes inefficiencies, poor user experiences, and fragmented liquidity for both businesses and consumers. Legacy networks struggle to handle concurrent, high-throughput financial operations securely. Our solution creates a unified protocol bridging B2B fintech applications with robust on-chain infrastructure. By combining programmable DeFi primitives, seamless payment routing, and agentic finance where autonomous agents execute optimal yield and settlement strategies we provide a secure, low-latency financial layer designed to eliminate friction and maximize capital efficiency across all digital transactions.',
+                whyThisMatters: 'Real World Solutions, as Sui provides the essential infrastructure required to make autonomous agentic finance and high-frequency DeFi a reality. Sui’s unique object-centric data model and programmable transaction blocks enable parallel execution, preventing the network congestion that typically bottlenecks legacy blockchains during complex payment routing or high-volume B2B operations. This matters because true financial innovation demands low, predictable fees, sub-second finality, and absolute security. By leveraging the inherent safety of the Move programming language, we can deploy autonomous financial agents that interact securely with decentralized markets, transforming theoretical blockchain infrastructure into scalable, everyday financial utilities for a global economy.',
+                schedule: [
+                    { event: 'Mentorship & Pitching Session (UTAR, Physical)', date: '22 – 25 June' },
+                    { event: 'Additional Final Stage', date: 'Not required' }
                 ],
-                requirements: 'Working prototype deployed on testnet, open-source smart contract repository, and a presentation deck detailing the architecture. Universal criteria require code to compile without errors, successful deployment to testnet, core functionality works as demonstrated, code is readable and documented, proper error handling, and the GitHub repository is organized.',
-                prizes: {
-                    first: '750 USDT',
-                    second: '500 USDT',
-                    third: '250 USDT'
-                }
-            },
-            'ai': {
-                id: 'TRK-03',
-                title: 'AI',
-                theme: 'Intelligent Web3',
-                color: 'orange',
-                icon: 'psychology',
-                pool: '1,500 USDT',
-                organiser: 'MUBA',
-                desc: 'Combine Artificial Intelligence with Blockchain to create smart, decentralized applications. Explore the intersection of these two transformative technologies by building applications that utilize on-chain AI models, decentralized data marketplaces for AI training, or AI agents that interact with smart contracts autonomously.',
-                projectTypes: [
-                    'AI Trading Bots and portfolio managers',
-                    'Predictive Models for market analytics or risk assessment',
-                    'Generative AI NFTs and dynamic digital assets',
-                    'Decentralized AI model training and validation'
+                prizes: [
+                    { label: 'Total Prize Pool', value: 'USD 3,500' }
                 ],
-                requirements: 'Working prototype demonstrating AI/Blockchain integration, smart contract repository, and a presentation deck. Universal criteria require code to compile without errors, successful deployment to testnet, core functionality works as demonstrated, code is readable and documented, proper error handling, and the GitHub repository is organized.',
-                prizes: {
-                    first: '750 USDT',
-                    second: '500 USDT',
-                    third: '250 USDT'
-                }
-            },
-            'infrastructure': {
-                id: 'TRK-04',
-                title: 'Infrastructure',
-                theme: 'Web3 Foundations',
-                color: 'green',
-                icon: 'dns',
-                pool: '1,500 USDT',
-                organiser: 'MUBA',
-                desc: 'Build tools, protocols, and foundational layers to scale the Web3 ecosystem. The focus is on improving the developer experience, enhancing blockchain scalability, and providing robust infrastructure that other decentralized applications can rely on. Help solve the core technical bottlenecks of current blockchain networks.',
-                projectTypes: [
-                    'Layer 2 Solutions and scaling mechanisms',
-                    'Developer Tooling (SDKs, APIs, indexing solutions)',
-                    'Data Availability and decentralized storage',
-                    'Cross-chain bridges and interoperability protocols'
+                support: [
+                    { resource: 'Mentors Provided', details: '2' },
+                    { resource: 'Judges Provided', details: '2' },
+                    { resource: 'Workshop Duration', details: '5 hours' },
+                    { resource: 'Starter Kit', details: '✅ Yes' },
+                    { resource: 'Blockchain', details: 'Sui Move Language' },
+                    { resource: 'Required Tools / APIs', details: 'sui.io' },
+                    { resource: 'Technical Resources', details: '<a href="https://sui.io/dev" class="text-purple" target="_blank">Sui Developer Hub</a>' },
+                    { resource: 'Documentation', details: '<a href="https://doc.sui.io" class="text-purple" target="_blank">doc.sui.io</a>' }
                 ],
-                requirements: 'Working prototype or proof of concept, comprehensive documentation, smart contract/code repository, and a presentation deck. Universal criteria require code to compile without errors, successful deployment to testnet, core functionality works as demonstrated, code is readable and documented, proper error handling, and the GitHub repository is organized.',
-                prizes: {
-                    first: '750 USDT',
-                    second: '500 USDT',
-                    third: '250 USDT'
-                }
-            },
-            'consumer': {
-                id: 'TRK-05',
-                title: 'Consumer Apps',
-                theme: 'Mass Adoption',
-                color: 'cyan',
-                icon: 'smartphone',
-                pool: '1,500 USDT',
-                organiser: 'MUBA',
-                desc: 'Create engaging decentralized applications tailored for everyday users. Break down the barriers to entry in Web3 by building intuitive, user-friendly applications that abstract away wallet complexity and gas fees. We want to see applications that have the potential to onboard the next million users into the Web3 space.',
-                projectTypes: [
-                    'SocialFi applications and decentralized social networks',
-                    'Web3 Gaming with sustainable tokenomics',
-                    'NFT Marketplaces and digital collectibles platforms',
-                    'Digital Identity and credential verification systems'
+                requirements: {
+                    intro: 'All three of the following must be demonstrated:',
+                    minimum: [
+                        '<strong>Move Smart Contracts</strong> — Deployment of secure, functional smart contracts written in Move on the Sui Testnet or Devnet to handle core financial logic.',
+                        '<strong>Working Frontend</strong> — A functional web application successfully integrated with a Sui wallet to interact with the blockchain.',
+                        '<strong>Core Workflow Execution</strong> — Demonstration of at least one end-to-end flow, such as a routed payment transaction or a basic agentic DeFi interaction executed on-chain.'
+                    ],
+                    bonus: [
+                        '<strong>Sui-Native UX Enhancements:</strong> Integrating zkLogin for seamless, passwordless onboarding of non-crypto native businesses, and utilizing Sponsored Transactions to abstract gas fees.',
+                        '<strong>Advanced Agentic Routing:</strong> Implementing dynamic, autonomous agents capable of calculating and executing optimal yield strategies across different liquidity pools.',
+                        '<strong>Premium Interface:</strong> A highly polished, responsive frontend utilizing smooth, physics-based micro-interactions to elevate the standard of decentralized financial applications.',
+                        '<strong>Walrus Integration:</strong> Implement MemWall'
+                    ],
+                    dealBreakers: [
+                        '<strong>Insecure Architecture:</strong> Smart contracts that fail to compile or exhibit critical security vulnerabilities in asset handling.',
+                        '<strong>Off-Chain Reliance:</strong> Faking core functionalities by relying on simulated, centralized off-chain logic instead of verifiable on-chain Move execution.',
+                        '<strong>Performance Bottlenecks:</strong> Failing to leverage Sui\'s parallel execution capabilities, resulting in high latency that defeats the purpose of the network.',
+                        '<strong>Broken Integration:</strong> A frontend that is fundamentally disconnected from the smart contracts or fails to route transactions successfully.'
+                    ]
+                },
+                judging: [
+                    { num: '1', criteria: 'Sui Architecture & Move Optimization', weight: '5%', desc: 'Evaluates the effective integration of unique Sui capabilities—such as Programmable Transaction Blocks (PTBs), zkLogin, or Sponsored Transactions—and the structural security of the underlying Move smart contracts.' },
+                    { num: '2', criteria: 'Agentic Workflow Complexity & Execution', weight: 'TBC', desc: 'Assesses the complexity, efficiency, and functional success of the core workflow, specifically looking at how well the autonomous agents route liquidity, execute yield strategies, or settle decentralized payments on-chain.' },
+                    { num: '3', criteria: 'Interface Fluidity & B2B Usability', weight: '10%', desc: 'Judges the frontend execution and overall user experience. High scores are awarded for modern styling and responsive, physics-based micro-interactions that successfully abstract the blockchain\'s complexity and make advanced financial workflows intuitive for business users.' }
                 ],
-                requirements: 'Working prototype with polished UI/UX, smart contract repository, and a presentation deck emphasizing user acquisition strategy. Universal criteria require code to compile without errors, successful deployment to testnet, core functionality works as demonstrated, code is readable and documented, proper error handling, and the GitHub repository is organized.',
-                prizes: {
-                    first: '750 USDT',
-                    second: '500 USDT',
-                    third: '250 USDT'
-                }
+                opportunities: [
+                    { name: 'Internship for Winners', available: '✅ Yes', details: '' },
+                    { name: 'Continued Development Support', available: '✅ Yes', details: 'Winners gain access to the <strong>Sui Developer Channel</strong> for development support' }
+                ]
             }
         };
 
         document.addEventListener('DOMContentLoaded', () => {
             const urlParams = new URLSearchParams(window.location.search);
-            const trackId = urlParams.get('id') || 'stablecoins'; // default to stablecoins
+            const trackId = urlParams.get('id') || 'near_legion'; // default to near_legion
             const track = tracksData[trackId];
 
             const contentContainer = document.getElementById('track-content');
@@ -312,7 +306,7 @@
                 contentContainer.style.borderColor = hexColor;
                 contentContainer.style.boxShadow = `0 0 20px rgba(${hexToRgb(hexColor)}, 0.1)`;
 
-                contentContainer.innerHTML = `
+                let html = `
                     <div class="track-detail-header">
                         <div class="track-detail-icon bg-${track.color}-light text-${track.color}">
                             <span class="material-symbols-outlined" style="font-size: inherit;">${track.icon}</span>
@@ -329,48 +323,149 @@
                             <div class="info-value text-${track.color}">${track.pool}</div>
                         </div>
                         <div class="info-box">
-                            <div class="info-label">Theme</div>
-                            <div class="info-value text-white">${track.theme}</div>
+                            <div class="info-label">Expected Difficulty</div>
+                            <div class="info-value text-white">${track.difficulty}</div>
                         </div>
+                        ${track.submittedBy ? `
                         <div class="info-box">
-                            <div class="info-label">Organiser</div>
-                            <div class="info-value text-white">${track.organiser}</div>
+                            <div class="info-label">Submitted by</div>
+                            <div class="info-value text-white">${track.submittedBy}</div>
                         </div>
+                        ` : ''}
+                        ${track.website ? `
+                        <div class="info-box">
+                            <div class="info-label">Website</div>
+                            <div class="info-value text-white"><a href="${track.website}" class="text-${track.color}" target="_blank">${track.website.replace('https://', '')}</a></div>
+                        </div>
+                        ` : ''}
                     </div>
 
-                    <div class="content-section-title">Overview</div>
-                    <p class="track-description">${track.desc}</p>
+                    <div class="content-section-title">Problem Statement</div>
+                    <p class="track-description">${track.problemStatement}</p>
 
-                    <div class="content-section-title">Project Types</div>
+                    <div class="content-section-title">Why This Matters</div>
+                    <p class="track-description">${track.whyThisMatters}</p>
+
+                    <div class="content-section-title">Schedule</div>
+                    <div class="mb-8 overflow-x-auto">
+                        <table style="width: 100%; text-align: left; border-collapse: collapse;">
+                            <thead>
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                    <th style="padding: 1rem 0.5rem; color: var(--text-gray);">Event</th>
+                                    <th style="padding: 1rem 0.5rem; color: var(--text-gray);">Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${track.schedule.map(s => `
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                                    <td style="padding: 1rem 0.5rem;">${s.event}</td>
+                                    <td style="padding: 1rem 0.5rem; font-weight: bold;" class="text-${track.color}">${s.date}</td>
+                                </tr>
+                                `).join('')}
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="content-section-title">Prize Pool</div>
+                    <div class="track-info-grid" style="margin-top: 1rem;">
+                        ${track.prizes.map((p, i) => `
+                        <div class="info-box" style="${i === track.prizes.length - 1 ? `background: rgba(255, 255, 255, 0.05); border: 1px solid ${hexColor}40;` : 'background: rgba(255, 255, 255, 0.05);'}">
+                            <div class="info-label ${i === track.prizes.length - 1 ? `text-${track.color}` : 'text-gray'}">${p.label}</div>
+                            <div class="info-value">${p.value}</div>
+                        </div>
+                        `).join('')}
+                    </div>
+
+                    <div class="content-section-title mt-8">Track Support</div>
+                    <div class="mb-8 overflow-x-auto">
+                        <table style="width: 100%; text-align: left; border-collapse: collapse;">
+                            <thead>
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                    <th style="padding: 1rem 0.5rem; color: var(--text-gray);">Resource</th>
+                                    <th style="padding: 1rem 0.5rem; color: var(--text-gray);">Details</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${track.support.map(s => `
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                                    <td style="padding: 1rem 0.5rem; color: var(--text-gray);">${s.resource}</td>
+                                    <td style="padding: 1rem 0.5rem;">${s.details}</td>
+                                </tr>
+                                `).join('')}
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="content-section-title">Challenge Requirements</div>
+                    ${track.requirements.intro ? `<p class="text-white mb-4">${track.requirements.intro}</p>` : ''}
+                    
+                    <h4 class="text-white font-bold mb-2">Minimum Requirements (Must-Have)</h4>
                     <ul class="req-list" style="color: var(--text-${track.color})">
-                        ${track.projectTypes.map(type => `<li><span class="text-white">${type}</span></li>`).join('')}
+                        ${track.requirements.minimum.map(req => `<li><span class="text-white">${req}</span></li>`).join('')}
                     </ul>
 
-                    <div class="content-section-title">Prize Distribution</div>
-                    <div class="track-info-grid" style="margin-top: 1rem;">
-                        <div class="info-box" style="background: rgba(255, 255, 255, 0.05); border: 1px solid ${hexColor}40;">
-                            <div class="info-label text-${track.color}">1st Place</div>
-                            <div class="info-value">${track.prizes.first}</div>
-                        </div>
-                        <div class="info-box" style="background: rgba(255, 255, 255, 0.05);">
-                            <div class="info-label text-gray">2nd Place</div>
-                            <div class="info-value">${track.prizes.second}</div>
-                        </div>
-                        <div class="info-box" style="background: rgba(255, 255, 255, 0.05);">
-                            <div class="info-label text-gray">3rd Place</div>
-                            <div class="info-value">${track.prizes.third}</div>
-                        </div>
+                    ${track.requirements.bonus ? `
+                    <h4 class="text-white font-bold mb-2 mt-6">Bonus Features (Nice-to-Have)</h4>
+                    <ul class="req-list" style="color: var(--text-${track.color})">
+                        ${track.requirements.bonus.map(req => `<li><span class="text-white">${req}</span></li>`).join('')}
+                    </ul>
+                    ` : ''}
+
+                    ${track.requirements.dealBreakers ? `
+                    <h4 class="text-red-500 font-bold mb-2 mt-6" style="color: #ff4d4d;">Deal-Breakers (Automatic Disqualification)</h4>
+                    <ul class="req-list" style="color: #ff4d4d;">
+                        ${track.requirements.dealBreakers.map(req => `<li><span class="text-white">${req}</span></li>`).join('')}
+                    </ul>
+                    ` : ''}
+
+                    <div class="content-section-title mt-8">Judging Criteria</div>
+                    <div class="mb-8 overflow-x-auto">
+                        <table style="width: 100%; text-align: left; border-collapse: collapse;">
+                            <thead>
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                    <th style="padding: 1rem 0.5rem; color: var(--text-gray); width: 50px;">#</th>
+                                    <th style="padding: 1rem 0.5rem; color: var(--text-gray);">Criteria</th>
+                                    <th style="padding: 1rem 0.5rem; color: var(--text-gray); width: 100px;">Weight</th>
+                                    ${track.judging[0].desc ? `<th style="padding: 1rem 0.5rem; color: var(--text-gray);">Description</th>` : ''}
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${track.judging.map(j => `
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                                    <td style="padding: 1rem 0.5rem; color: var(--text-gray);">${j.num}</td>
+                                    <td style="padding: 1rem 0.5rem; font-weight: bold;" class="text-${track.color}">${j.criteria}</td>
+                                    <td style="padding: 1rem 0.5rem;">${j.weight}</td>
+                                    ${j.desc ? `<td style="padding: 1rem 0.5rem; font-size: 0.9em; color: var(--text-gray);">${j.desc}</td>` : ''}
+                                </tr>
+                                `).join('')}
+                            </tbody>
+                        </table>
                     </div>
 
-                    <div class="content-section-title mt-8">Requirements</div>
-                    <div class="info-box border-l-4" style="border-left: 4px solid ${hexColor};">
-                        <p class="text-white">${track.requirements}</p>
-                    </div>
-                    
-                    <div class="info-box mt-4" style="background: rgba(255, 255, 255, 0.05); border: 1px dashed ${hexColor}80;">
-                        <p class="text-gray text-sm"><strong>Note on Judging:</strong> 20% of your total judging score will be explicitly based on <span class="text-${track.color}">Track-Specific Technical Implementations</span> as defined by the track sponsor.</p>
+                    <div class="content-section-title">Post-Hackathon Opportunities</div>
+                    <div class="mb-8 overflow-x-auto">
+                        <table style="width: 100%; text-align: left; border-collapse: collapse;">
+                            <thead>
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                    <th style="padding: 1rem 0.5rem; color: var(--text-gray);">Opportunity</th>
+                                    <th style="padding: 1rem 0.5rem; color: var(--text-gray); width: 120px;">Available</th>
+                                    <th style="padding: 1rem 0.5rem; color: var(--text-gray);">Details</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${track.opportunities.map(o => `
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                                    <td style="padding: 1rem 0.5rem;">${o.name}</td>
+                                    <td style="padding: 1rem 0.5rem;">${o.available}</td>
+                                    <td style="padding: 1rem 0.5rem; font-size: 0.9em; color: var(--text-gray);">${o.details}</td>
+                                </tr>
+                                `).join('')}
+                            </tbody>
+                        </table>
                     </div>
                 `;
+
+                contentContainer.innerHTML = html;
             } else {
                 contentContainer.innerHTML = `
                     <div class="text-center py-12">
