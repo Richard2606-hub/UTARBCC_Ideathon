@@ -427,8 +427,72 @@ h1, h2, h3, h4, h5, h6 {
     gap: 1rem;
 }
 
-.mobile-countdown {
+/* Inline Mobile Countdown — completely separate from desktop .countdown-card */
+.inline-countdown-wrap {
     display: none; /* Hidden on desktop */
+}
+
+.inline-countdown-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    overflow: hidden;
+}
+
+.inline-countdown-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(transparent, var(--neon-purple), transparent 30%);
+    animation: rotate 4s linear infinite;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+.inline-countdown-title {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 1rem;
+    color: var(--text-muted);
+}
+
+.inline-countdown-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+}
+
+.inline-time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inline-time-val {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.inline-time-label {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    margin-top: 6px;
+    letter-spacing: 1px;
 }
 
 .countdown-card {
@@ -705,7 +769,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .criteria-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
     gap: 1.5rem;
 }
 
@@ -1234,10 +1298,12 @@ footer {
     .desktop-countdown {
         display: none !important;
     }
-    
-    .mobile-countdown {
-        display: block !important;
-        margin-bottom: 2.5rem; /* Space before buttons */
+
+    .inline-countdown-wrap {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 2rem;
     }
 
     .hero-actions { 

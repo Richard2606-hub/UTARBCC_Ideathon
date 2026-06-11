@@ -3,22 +3,35 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileToggle = document.getElementById('mobile-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
 
-    mobileToggle.addEventListener('click', () => {
-        mobileMenu.classList.toggle('active');
-        const icon = mobileToggle.querySelector('.material-symbols-outlined');
-        if (mobileMenu.classList.contains('active')) {
-            icon.textContent = 'close';
-        } else {
-            icon.textContent = 'menu';
-        }
-    });
+    if (mobileToggle) {
+        mobileToggle.addEventListener('click', () => {
+            if (mobileMenu) {
+                mobileMenu.classList.toggle('active');
+            }
+            const icon = mobileToggle.querySelector('.material-symbols-outlined');
+            if (icon) {
+                if (mobileMenu && mobileMenu.classList.contains('active')) {
+                    icon.textContent = 'close';
+                } else {
+                    icon.textContent = 'menu';
+                }
+            }
+        });
+    }
 
     // Close mobile menu when a link is clicked
     const mobileLinks = document.querySelectorAll('.mobile-link');
     mobileLinks.forEach(link => {
         link.addEventListener('click', () => {
-            mobileMenu.classList.remove('active');
-            mobileToggle.querySelector('.material-symbols-outlined').textContent = 'menu';
+            if (mobileMenu) {
+                mobileMenu.classList.remove('active');
+            }
+            if (mobileToggle) {
+                const icon = mobileToggle.querySelector('.material-symbols-outlined');
+                if (icon) {
+                    icon.textContent = 'menu';
+                }
+            }
         });
     });
 
@@ -57,35 +70,41 @@ document.addEventListener('DOMContentLoaded', () => {
     gsap.registerPlugin(ScrollTrigger);
 
     // Hero Section Animation
-    const heroTl = gsap.timeline();
-    heroTl.from(".badge", { y: 20, opacity: 0, duration: 0.6, ease: "power3.out" })
-          .from(".hero-title", { y: 30, opacity: 0, duration: 0.8, ease: "power3.out" }, "-=0.4")
-          .from(".hero-desc", { y: 20, opacity: 0, duration: 0.6, ease: "power3.out" }, "-=0.6")
-          .from(".hero-actions .btn", { y: 20, opacity: 0, duration: 0.6, stagger: 0.2, ease: "power3.out" }, "-=0.4")
-          .from(".countdown-card", { x: 50, opacity: 0, duration: 0.8, ease: "power3.out", rotationY: 15 }, "-=0.8");
+    if (document.querySelector('.hero-title')) {
+        const heroTl = gsap.timeline();
+        heroTl.from(".badge", { y: 20, opacity: 0, duration: 0.6, ease: "power3.out" })
+              .from(".hero-title", { y: 30, opacity: 0, duration: 0.8, ease: "power3.out" }, "-=0.4")
+              .from(".hero-desc", { y: 20, opacity: 0, duration: 0.6, ease: "power3.out" }, "-=0.6")
+              .from(".hero-actions .btn", { y: 20, opacity: 0, duration: 0.6, stagger: 0.2, ease: "power3.out" }, "-=0.4")
+              .from(".countdown-card", { x: 50, opacity: 0, duration: 0.8, ease: "power3.out", rotationY: 15 }, "-=0.8");
+    }
 
     // Parallax background orbs
-    gsap.to(".orb-1", {
-        y: "300px",
-        x: "150px",
-        scrollTrigger: {
-            trigger: "body",
-            start: "top top",
-            end: "bottom bottom",
-            scrub: 1.5
-        }
-    });
+    if (document.querySelector(".orb-1")) {
+        gsap.to(".orb-1", {
+            y: "300px",
+            x: "150px",
+            scrollTrigger: {
+                trigger: "body",
+                start: "top top",
+                end: "bottom bottom",
+                scrub: 1.5
+            }
+        });
+    }
     
-    gsap.to(".orb-2", {
-        y: "-300px",
-        x: "-150px",
-        scrollTrigger: {
-            trigger: "body",
-            start: "top top",
-            end: "bottom bottom",
-            scrub: 1.5
-        }
-    });
+    if (document.querySelector(".orb-2")) {
+        gsap.to(".orb-2", {
+            y: "-300px",
+            x: "-150px",
+            scrollTrigger: {
+                trigger: "body",
+                start: "top top",
+                end: "bottom bottom",
+                scrub: 1.5
+            }
+        });
+    }
 
     // Scroll Animations for Sections
     const sectionsToAnimate = [
@@ -156,10 +175,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const minsEl = document.getElementById('minutes');
     const secsEl = document.getElementById('seconds');
     
-    const daysMobEl = document.getElementById('days-mobile');
-    const hoursMobEl = document.getElementById('hours-mobile');
-    const minsMobEl = document.getElementById('minutes-mobile');
-    const secsMobEl = document.getElementById('seconds-mobile');
+    const daysMobEl = document.getElementById('days-inline');
+    const hoursMobEl = document.getElementById('hours-inline');
+    const minsMobEl = document.getElementById('minutes-inline');
+    const secsMobEl = document.getElementById('seconds-inline');
 
     function updateCountdown() {
         const now = new Date().getTime();
