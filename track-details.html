@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,12 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
     <!-- Material Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="style.css">
     <style>
         .back-btn {
@@ -22,9 +26,11 @@
             font-family: 'Space Grotesk', sans-serif;
             transition: color 0.3s ease;
         }
+
         .back-btn:hover {
             color: var(--text-light);
         }
+
         .track-detail-card {
             padding: 3rem;
             border-radius: 1rem;
@@ -33,12 +39,14 @@
             backdrop-filter: blur(10px);
             margin-bottom: 4rem;
         }
+
         .track-detail-header {
             display: flex;
             align-items: center;
             gap: 1.5rem;
             margin-bottom: 2rem;
         }
+
         .track-detail-icon {
             width: 80px;
             height: 80px;
@@ -48,11 +56,13 @@
             justify-content: center;
             font-size: 2.5rem;
         }
+
         .track-detail-title {
             font-family: 'Orbitron', sans-serif;
             font-size: 2.5rem;
             font-weight: 700;
         }
+
         .track-detail-badge {
             padding: 0.25rem 0.75rem;
             border-radius: 9999px;
@@ -62,6 +72,7 @@
             margin-top: 0.5rem;
             display: inline-block;
         }
+
         .track-info-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -70,11 +81,13 @@
             padding-bottom: 2rem;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
+
         .info-box {
             background: rgba(0, 0, 0, 0.2);
             padding: 1.5rem;
             border-radius: 0.75rem;
         }
+
         .info-label {
             font-size: 0.875rem;
             color: var(--text-gray);
@@ -82,34 +95,40 @@
             text-transform: uppercase;
             letter-spacing: 1px;
         }
+
         .info-value {
             font-size: 1.25rem;
             font-weight: 600;
             font-family: 'Space Grotesk', sans-serif;
         }
+
         .track-description {
             font-size: 1.125rem;
             line-height: 1.7;
             color: var(--text-gray);
             margin-bottom: 2rem;
         }
+
         .req-list {
             list-style: none;
             padding: 0;
             margin: 0 0 2rem 0;
         }
+
         .req-list li {
             position: relative;
             padding-left: 1.5rem;
             margin-bottom: 0.75rem;
             color: var(--text-light);
         }
+
         .req-list li::before {
             content: '→';
             position: absolute;
             left: 0;
             color: currentColor;
         }
+
         .content-section-title {
             font-family: 'Orbitron', sans-serif;
             font-size: 1.5rem;
@@ -118,6 +137,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Background Elements -->
     <div class="bg-effects">
@@ -134,7 +154,8 @@
                 <a href="index.html#home" class="nav-link">Home</a>
                 <a href="index.html#tracks" class="nav-link active">Tracks</a>
             </div>
-            <a href="https://forms.gle/vx3ffcEMEkRuwkrT7" class="btn btn-primary nav-btn" target="_blank" rel="noopener noreferrer">Register Now</a>
+            <a href="https://forms.gle/vx3ffcEMEkRuwkrT7" class="btn btn-primary nav-btn" target="_blank"
+                rel="noopener noreferrer">Register Now</a>
         </div>
     </nav>
 
@@ -143,20 +164,23 @@
             <a href="javascript:history.back()" class="back-btn">
                 <span class="material-symbols-outlined">arrow_back</span> Back to Tracks
             </a>
-            
+
             <div id="track-content" class="track-detail-card reveal">
                 <!-- Content will be loaded dynamically -->
                 <div class="text-center py-12">
-                    <span class="material-symbols-outlined text-4xl mb-4 text-cyan" style="animation: spin 1s linear infinite;">refresh</span>
+                    <span class="material-symbols-outlined text-4xl mb-4 text-cyan"
+                        style="animation: spin 1s linear infinite;">refresh</span>
                     <p>Loading track details...</p>
                 </div>
             </div>
         </div>
     </main>
-    
+
     <style>
         @keyframes spin {
-            100% { transform: rotate(360deg); }
+            100% {
+                transform: rotate(360deg);
+            }
         }
     </style>
 
@@ -167,8 +191,14 @@
                 © UTAR BlockChain Club Ideathon · UNIVERSITI TUNKU ABDUL RAHMAN BLOCKCHAIN CLUB
             </div>
             <div class="social-links">
-                <a href="https://www.instagram.com/utar.blockchainclub?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="social-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+                <a href="https://www.instagram.com/utar.blockchainclub?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target="_blank" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                    </svg>
                 </a>
             </div>
         </div>
@@ -177,7 +207,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
-    
+
     <script>
         const tracksData = {
             'near_legion': {
@@ -276,7 +306,7 @@
                 },
                 judging: [
                     { num: '1', criteria: 'Sui Architecture & Move Optimization', weight: '5%', desc: 'Evaluates the effective integration of unique Sui capabilities—such as Programmable Transaction Blocks (PTBs), zkLogin, or Sponsored Transactions—and the structural security of the underlying Move smart contracts.' },
-                    { num: '2', criteria: 'Agentic Workflow Complexity & Execution', weight: 'TBC', desc: 'Assesses the complexity, efficiency, and functional success of the core workflow, specifically looking at how well the autonomous agents route liquidity, execute yield strategies, or settle decentralized payments on-chain.' },
+                    { num: '2', criteria: 'Agentic Workflow Complexity & Execution', weight: '5%', desc: 'Assesses the complexity, efficiency, and functional success of the core workflow, specifically looking at how well the autonomous agents route liquidity, execute yield strategies, or settle decentralized payments on-chain.' },
                     { num: '3', criteria: 'Interface Fluidity & B2B Usability', weight: '10%', desc: 'Judges the frontend execution and overall user experience. High scores are awarded for modern styling and responsive, physics-based micro-interactions that successfully abstract the blockchain\'s complexity and make advanced financial workflows intuitive for business users.' }
                 ],
                 opportunities: [
@@ -485,10 +515,11 @@
                 return r + r + g + g + b + b;
             });
             const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-            return result ? 
-                parseInt(result[1], 16) + ', ' + parseInt(result[2], 16) + ', ' + parseInt(result[3], 16) 
+            return result ?
+                parseInt(result[1], 16) + ', ' + parseInt(result[2], 16) + ', ' + parseInt(result[3], 16)
                 : '255, 255, 255';
         }
     </script>
 </body>
+
 </html>
