@@ -1243,6 +1243,35 @@ footer {
 
 /* Utilities */
 .icon-sm { font-size: 18px; }
+.hidden { display: none !important; }
+
+/* Tabs */
+.tab-btn {
+    background: transparent;
+    border: 1px solid var(--glass-border);
+    color: var(--text-muted);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: var(--font-mono);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+.tab-btn:hover {
+    border-color: var(--glass-highlight);
+    background: var(--glass-bg);
+}
+.tab-btn.active.border-cyan {
+    border-color: var(--neon-cyan);
+    color: var(--neon-cyan);
+    background: rgba(0, 240, 255, 0.1);
+}
+.tab-btn.active.border-purple {
+    border-color: var(--neon-purple);
+    color: var(--neon-purple);
+    background: rgba(176, 38, 255, 0.1);
+}
 
 /* Scroll Reveal Animation (Handled by GSAP ScrollTrigger) */
 .reveal {

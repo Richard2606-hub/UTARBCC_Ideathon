@@ -55,7 +55,7 @@
             <a href="#venue" class="mobile-link">Venue</a>
             <a href="#sponsors" class="mobile-link">Sponsors</a>
             <a href="#faq" class="mobile-link">FAQ</a>
-            <a href="submission.html" class="mobile-link text-cyan">Submit</a>
+            <!--<a href="submission.html" class="mobile-link text-cyan">Submit</a>-->
             <a href="https://forms.gle/vx3ffcEMEkRuwkrT7" class="btn btn-primary w-full text-center mt-4" target="_blank" rel="noopener noreferrer">Register Now</a>
         </div>
     </nav>
@@ -302,21 +302,72 @@
         <section id="timeline" class="timeline section-padding reveal bg-darker">
             <div class="container max-w-4xl">
                 <h2 class="section-title text-center">EVENT <span class="text-gradient">SEQUENCE</span></h2>
-                <div class="timeline-container mt-12">
+                <div class="flex justify-center gap-4 mt-8 mb-8">
+                    <button class="tab-btn active border-purple text-purple" data-target="track-sui">Sui Track</button>
+                    <button class="tab-btn border-cyan" data-target="track-near">Near Legion Track</button>
+                </div>
+
+                <!-- Sui Track Timeline -->
+                <div id="track-sui" class="timeline-container tab-content">
                     <div class="timeline-line"></div>
                     
-                    <!-- Day 1: 26/6 (Friday) -->
-                    <div class="timeline-item" data-date="2026-06-26">
+                    <!-- Opening Ceremony: 10 April -->
+                    <div class="timeline-item" data-date="2026-04-10">
                         <div class="timeline-node"></div>
-                        <div class="timeline-content glass-panel">
+                        <div class="timeline-content glass-panel border-purple">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">Opening Ceremony</h3>
+                                <span class="timeline-date text-purple"><span class="material-symbols-outlined icon-sm">celebration</span> 10TH APRIL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Track Reveal: 11 Jun -->
+                    <div class="timeline-item" data-date="2026-06-11">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content glass-panel border-purple">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">Track Reveal</h3>
+                                <span class="timeline-date text-purple"><span class="material-symbols-outlined icon-sm">visibility</span> 11TH JUNE</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Registration: 12 Jun - 21 June 23:59 -->
+                    <div class="timeline-item" data-date="2026-06-12">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content glass-panel border-purple">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">Registration</h3>
+                                <span class="timeline-date text-purple"><span class="material-symbols-outlined icon-sm">how_to_reg</span> 12TH - 21ST JUNE</span>
+                            </div>
+                            <p class="text-gray-300 mt-2">Closes on 21st June at 23:59</p>
+                        </div>
+                    </div>
+
+                    <!-- Online Hacking Period: 12 June - 24 June -->
+                    <div class="timeline-item" data-date="2026-06-12">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content glass-panel border-purple">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">Online Hacking Period</h3>
+                                <span class="timeline-date text-purple"><span class="material-symbols-outlined icon-sm">code</span> 12TH - 24TH JUNE</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 1: 25/6 (Thursday) -->
+                    <div class="timeline-item" data-date="2026-06-25">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content glass-panel border-purple">
                             <div class="flex justify-between items-center mb-2">
                                 <h3 class="text-xl font-bold">Physical Hacking & Registration</h3>
-                                <span class="timeline-date text-cyan"><span class="material-symbols-outlined icon-sm">app_registration</span> 26TH JUNE (FRI)</span>
+                                <span class="timeline-date text-purple"><span class="material-symbols-outlined icon-sm">app_registration</span> 25TH JUNE (THU)</span>
                             </div>
                             <div class="sub-timeline-list mt-4">
                                 <div class="sub-item">
-                                    <div class="sub-time">08:00 AM - 10:00 AM</div>
-                                    <div class="sub-event">Team Registration & Breakfast</div>
+                                    <div class="sub-time">09:00 AM - 10:00 AM</div>
+                                    <div class="sub-event">Team Registration</div>
                                 </div>
                                 <div class="sub-item">
                                     <div class="sub-time">10:00 AM - 01:00 PM</div>
@@ -324,7 +375,168 @@
                                 </div>
                                 <div class="sub-item">
                                     <div class="sub-time">01:00 PM - 02:00 PM</div>
-                                    <div class="sub-event">Lunch</div>
+                                    <div class="sub-event">Lunch Break</div>
+                                </div>
+                                <div class="sub-item">
+                                    <div class="sub-time">02:00 PM - 05:00 PM</div>
+                                    <div class="sub-event">Physical session for asking the track tutors and judges</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 2: 26/6 (Friday) -->
+                    <div class="timeline-item" data-date="2026-06-26">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content glass-panel border-purple">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">Demo Day & Grand Finale</h3>
+                                <span class="timeline-date text-purple"><span class="material-symbols-outlined icon-sm">trophy</span> 26TH JUNE (FRI)</span>
+                            </div>
+                            <div class="sub-timeline-list mt-4">
+                                <div class="sub-item">
+                                    <div class="sub-time">09:00 AM</div>
+                                    <div class="sub-event">Starting for Team Registration</div>
+                                </div>
+                                <div class="sub-item">
+                                    <div class="sub-time">09:00 AM - 12:00 PM</div>
+                                    <div class="sub-event">Last Polishing Session</div>
+                                </div>
+                                <div class="sub-item bg-highlight">
+                                    <div class="sub-time">12:00 PM</div>
+                                    <div class="sub-event text-purple font-bold">Submission for Pitching</div>
+                                </div>
+                                <div class="sub-item">
+                                    <div class="sub-time">01:00 PM</div>
+                                    <div class="sub-event text-purple font-bold">Reveal for Finalist for Pitching Session</div>
+                                </div>
+                                <div class="sub-item">
+                                    <div class="sub-time">01:00 PM - 02:00 PM</div>
+                                    <div class="sub-event">Lunch Break</div>
+                                </div>
+                                <div class="sub-item">
+                                    <div class="sub-time">02:00 PM - 05:00 PM</div>
+                                    <div class="sub-event">Pitching session</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Finalist Announcement: 13 July -->
+                    <div class="timeline-item" data-date="2026-07-13">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content glass-panel border-purple">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">Finalist Announcement</h3>
+                                <span class="timeline-date text-purple"><span class="material-symbols-outlined icon-sm">campaign</span> 13TH JULY</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hack Week: 13-24 July -->
+                    <div class="timeline-item" data-date="2026-07-13">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content glass-panel border-purple">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">Hack Week</h3>
+                                <span class="timeline-date text-purple"><span class="material-symbols-outlined icon-sm">event</span> 13TH - 24TH JULY</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Physical Hacking: 23-24 July -->
+                    <div class="timeline-item" data-date="2026-07-23">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content glass-panel border-purple">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">Final Physical Hacking</h3>
+                                <span class="timeline-date text-purple"><span class="material-symbols-outlined icon-sm">location_on</span> 23RD - 24TH JULY</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Closing Ceremony: TBA -->
+                    <div class="timeline-item" data-date="TBA">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content glass-panel border-purple">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">Closing Ceremony & Prize Giving</h3>
+                                <span class="timeline-date text-purple"><span class="material-symbols-outlined icon-sm">emoji_events</span> TBA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Near Legion Track Timeline -->
+                <div id="track-near" class="timeline-container tab-content hidden">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Opening Ceremony: 10 April -->
+                    <div class="timeline-item" data-date="2026-04-10">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content glass-panel border-cyan">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">Opening Ceremony</h3>
+                                <span class="timeline-date text-cyan"><span class="material-symbols-outlined icon-sm">celebration</span> 10TH APRIL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Track Reveal: 11 Jun -->
+                    <div class="timeline-item" data-date="2026-06-11">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content glass-panel border-cyan">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">Track Reveal</h3>
+                                <span class="timeline-date text-cyan"><span class="material-symbols-outlined icon-sm">visibility</span> 11TH JUNE</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Registration: 12 Jun - 21 June 23:59 -->
+                    <div class="timeline-item" data-date="2026-06-12">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content glass-panel border-cyan">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">Registration</h3>
+                                <span class="timeline-date text-cyan"><span class="material-symbols-outlined icon-sm">how_to_reg</span> 12TH - 21ST JUNE</span>
+                            </div>
+                            <p class="text-gray-300 mt-2">Closes on 21st June at 23:59</p>
+                        </div>
+                    </div>
+
+                    <!-- Online Hacking Period: 12 June - 25 June -->
+                    <div class="timeline-item" data-date="2026-06-12">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content glass-panel border-cyan">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">Online Hacking Period</h3>
+                                <span class="timeline-date text-cyan"><span class="material-symbols-outlined icon-sm">code</span> 12TH - 25TH JUNE</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 1: 26/6 (Friday) -->
+                    <div class="timeline-item" data-date="2026-06-26">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content glass-panel border-cyan">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">Physical Hacking & Registration</h3>
+                                <span class="timeline-date text-cyan"><span class="material-symbols-outlined icon-sm">app_registration</span> 26TH JUNE (FRI)</span>
+                            </div>
+                            <div class="sub-timeline-list mt-4">
+                                <div class="sub-item">
+                                    <div class="sub-time">09:00 AM - 10:00 AM</div>
+                                    <div class="sub-event">Team Registration</div>
+                                </div>
+                                <div class="sub-item">
+                                    <div class="sub-time">10:00 AM - 01:00 PM</div>
+                                    <div class="sub-event">Physical session for asking the track tutors and judges</div>
+                                </div>
+                                <div class="sub-item">
+                                    <div class="sub-time">01:00 PM - 02:00 PM</div>
+                                    <div class="sub-event">Lunch Break</div>
                                 </div>
                                 <div class="sub-item">
                                     <div class="sub-time">02:00 PM - 05:00 PM</div>
@@ -337,18 +549,18 @@
                     <!-- Day 2: 27/6 (Saturday) -->
                     <div class="timeline-item" data-date="2026-06-27">
                         <div class="timeline-node"></div>
-                        <div class="timeline-content glass-panel">
+                        <div class="timeline-content glass-panel border-cyan">
                             <div class="flex justify-between items-center mb-2">
                                 <h3 class="text-xl font-bold">Demo Day & Grand Finale</h3>
                                 <span class="timeline-date text-cyan"><span class="material-symbols-outlined icon-sm">trophy</span> 27TH JUNE (SAT)</span>
                             </div>
                             <div class="sub-timeline-list mt-4">
                                 <div class="sub-item">
-                                    <div class="sub-time">08:00 AM</div>
-                                    <div class="sub-event">Starting for Team Registration & Breakfast</div>
+                                    <div class="sub-time">09:00 AM</div>
+                                    <div class="sub-event">Starting for Team Registration</div>
                                 </div>
                                 <div class="sub-item">
-                                    <div class="sub-time">08:00 AM - 12:00 PM</div>
+                                    <div class="sub-time">09:00 AM - 12:00 PM</div>
                                     <div class="sub-event">Last Polishing Session</div>
                                 </div>
                                 <div class="sub-item bg-highlight">
@@ -361,20 +573,24 @@
                                 </div>
                                 <div class="sub-item">
                                     <div class="sub-time">01:00 PM - 02:00 PM</div>
-                                    <div class="sub-event">Lunch Time</div>
+                                    <div class="sub-event">Lunch Break</div>
                                 </div>
                                 <div class="sub-item">
-                                    <div class="sub-time">02:00 PM - 04:00 PM</div>
-                                    <div class="sub-event">First, Second, and Third Track Pitch</div>
+                                    <div class="sub-time">02:00 PM - 05:00 PM</div>
+                                    <div class="sub-event">Pitching session</div>
                                 </div>
-                                <div class="sub-item">
-                                    <div class="sub-time">04:00 PM - 05:00 PM</div>
-                                    <div class="sub-event">Winner Finalize</div>
-                                </div>
-                                <div class="sub-item bg-highlight">
-                                    <div class="sub-time">05:00 PM</div>
-                                    <div class="sub-event text-cyan font-bold">Prize-Giving & Closing Ceremony</div>
-                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Closing Ceremony: TBA -->
+                    <div class="timeline-item" data-date="TBA">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content glass-panel border-cyan">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">Closing Ceremony & Prize Giving</h3>
+                                <span class="timeline-date text-cyan"><span class="material-symbols-outlined icon-sm">emoji_events</span> TBA</span>
                             </div>
                         </div>
                     </div>
@@ -392,13 +608,13 @@
                     <!-- Mentor 1 -->
                     <div class="judge-card glass-panel hover-lift flex-col-md">
                         <div class="judge-photo">
-                            <img src="https://placehold.co/600x800/1a1a24/FFFFFF?text=ALEX" alt="Alex Mercer">
+                            <img src="yuen_avatar.jpg" alt="Yuen" onerror="this.src='https://placehold.co/600x800/1a1a24/FFFFFF?text=YUEN'">
                         </div>
                         <div class="judge-info">
-                            <div class="judge-role text-cyan"><span class="material-symbols-outlined icon-sm">gavel</span> Lead Judge</div>
-                            <h3 class="judge-name">Alex Mercer</h3>
-                            <p class="judge-title text-purple">Blockchain Architect @ Nexus</p>
-                            <p class="judge-bio text-gray text-sm mt-4">With over a decade of experience in distributed systems, Alex specializes in highly scalable Layer 2 architectures. They have previously led engineering teams at multiple successful Web3 startups and are passionate about mentoring the next generation of builders.</p>
+                            <div class="judge-role text-cyan"><span class="material-symbols-outlined icon-sm">gavel</span> Mentor and Judge for Near Legion track</div>
+                            <h3 class="judge-name">Yuen</h3>
+                            <p class="judge-title text-purple">NEAR Governance & Regional Community Lead</p>
+                            <p class="judge-bio text-gray text-sm mt-4">Yuen has been a pioneer in NEAR governance since 2024 and has actively supported the growth of NEAR’s regional communities. He is currently working on advancing privacy for agentic AI agents within the NEAR ecosystem and the wider blockchain space.</p>
                         </div>
                     </div>
                     <!-- Mentor 2 -->

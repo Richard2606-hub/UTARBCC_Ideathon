@@ -226,34 +226,67 @@ document.addEventListener('DOMContentLoaded', () => {
     // 6. Timeline Logic
     function updateTimeline() {
         const now = new Date().getTime();
-        const timelineItems = document.querySelectorAll('.timeline-item');
-        let latestReachedIndex = -1;
+        const containers = document.querySelectorAll('.timeline-container');
+        
+        containers.forEach(container => {
+            const timelineItems = container.querySelectorAll('.timeline-item');
+            let latestReachedIndex = -1;
 
-        // Find the latest reached index
-        timelineItems.forEach((item, index) => {
-            const itemDate = new Date(item.getAttribute('data-date')).getTime();
-            if (now >= itemDate) {
-                latestReachedIndex = index;
-            }
-        });
+            // Find the latest reached index
+            timelineItems.forEach((item, index) => {
+                const dateAttr = item.getAttribute('data-date');
+                if (dateAttr) {
+                    const itemDate = new Date(dateAttr).getTime();
+                    if (now >= itemDate) {
+                        latestReachedIndex = index;
+                    }
+                }
+            });
 
-        // Apply classes
-        timelineItems.forEach((item, index) => {
-            const node = item.querySelector('.timeline-node');
-            
-            // Reset
-            item.classList.remove('dull');
-            if (node) node.classList.remove('pulse-node');
+            // Apply classes
+            timelineItems.forEach((item, index) => {
+                const node = item.querySelector('.timeline-node');
+                
+                // Reset
+                item.classList.remove('dull');
+                if (node) node.classList.remove('pulse-node');
 
-            if (index <= latestReachedIndex) {
-                // Time reached: glow
-                if (node) node.classList.add('pulse-node');
-            } else {
-                // Future events: dull
-                item.classList.add('dull');
-            }
+                if (index <= latestReachedIndex) {
+                    // Time reached: glow
+                    if (node) node.classList.add('pulse-node');
+                } else {
+                    // Future events: dull
+                    item.classList.add('dull');
+                }
+            });
         });
     }
 
     updateTimeline();
+    setInterval(updateTimeline, 60000); // Check every minute just in case
+
+    // 7. Timeline Tabs
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    if (tabBtns.length > 0) {
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active from all buttons
+                tabBtns.forEach(b => b.classList.remove('active'));
+                // Hide all contents
+                tabContents.forEach(c => c.classList.add('hidden'));
+
+                // Add active to clicked button
+                btn.classList.add('active');
+                
+                // Show corresponding content
+                const targetId = btn.getAttribute('data-target');
+                const targetContent = document.getElementById(targetId);
+                if (targetContent) {
+                    targetContent.classList.remove('hidden');
+                }
+            });
+        });
+    }
 });
